@@ -40,19 +40,19 @@
 
 
         .header img {
-            max-width: 120px;
+            max-width: 80px;
         }
         .header span {
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        font-size: 32px;
+        font-size: 24px;
         color: darkslategray;
     }
         /* Main Content */
         .main {
             flex: 1;
             text-align: left;
-            Margin-right: 7%;
-            Margin-left: 7%;
+            Margin-right: 12%;
+            Margin-left: 12%;
             padding: 50px 20px;
             
         }
@@ -80,14 +80,7 @@
             color: #666;
         }
 
-        /* Footer */
-        .footer {
-            background: #333;
-            color: #fff;
-            text-align: center;
-            padding: 15px;
-            font-size: 14px;
-        }
+       
     </style>
 </head>
 <body>
@@ -129,8 +122,57 @@
 
     <!-- Footer -->
     <footer class="footer">
-        &copy; 2025 Your Company. All Rights Reserved.
+        <div class="footer-content">
+            <!-- Left: Logo -->
+            <div class="footer-col1">
+            <span class="footer-logo">
+                <img src="Futurewave_Logo.png" alt="Logo">
+                
+            </span>
+            <span>FutureWave Enterprises</span>
+            </div>
+            <!-- Right: Address & Contact -->
+            <div class="footer-info">
+                <p>📍 15442 VENTURA BLVD., STE 201-889 SHERMAN OAKS,<br> CALIFORNIA 91403</p>
+                <p>📞 +91 9574620797</p>
+            </div>
+        </div>
     </footer>
-
+    <div style="justify-content: center; text-align: center; background: #333;padding: 10px; color: aliceblue;">
+    <span>&copy; 2025 FutureWave Enterprises. All Rights Reserved.</span>
+    </div>
+    
+    <style>
+        .footer {
+            background: #333;
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.2); /* Footer shadow */
+        }
+    
+        .footer-content {
+            width: 90%;
+            max-width: 1200px;
+            display: flex;
+            justify-content: space-between; /* Space between logo & text */
+            align-items: center;
+        }
+    
+        .footer-logo img {
+            max-height: 50px; /* Adjust as needed */
+        }
+    
+        .footer-info {
+            text-align: right;
+            font-size: 16px;
+        }
+    
+        .footer-info p {
+            margin: 5px 0;
+        }
+    </style>
 </body>
 </html>
